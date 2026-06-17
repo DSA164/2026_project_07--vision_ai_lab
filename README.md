@@ -1,45 +1,97 @@
-# Vision Ai Lab
+# 2026 Project 08 — Vision AI Lab
 
-![AI Engineering](https://img.shields.io/badge/AI-engineering-blue)
+## Purpose
 
-## AI Engineering Learning Program
+This project is part of the `AI-Engineering-Lab` learning roadmap.
 
-This repository is part of my **AI Engineering learning journey**.
+It introduces computer vision foundations for AI engineering. The goal is to understand how images become tensors, how visual models make predictions, and how to evaluate visual errors.
 
-Designed and developed **from scratch by myself with AI assistance for research and ideation**.
+This project should remain focused on fundamentals before moving to multimodal assistants.
 
----
+## Why this project exists
 
-## Description
+Many AI systems do not work only with text. They also need to process images from cameras, screenshots, documents, interfaces, or sensors.
 
-Computer vision experiments with YOLO.
+The basic vision pipeline is:
 
----
+```text
+image
+  ↓
+loading
+  ↓
+preprocessing
+  ↓
+tensor
+  ↓
+model
+  ↓
+prediction
+  ↓
+metric
+  ↓
+error analysis
+```
 
-## Learning objectives
+This project builds the visual foundation needed for multimodal and robotics projects.
 
-- Build production-ready AI systems
-- Master LLM infrastructure
-- Develop advanced RAG architectures
-- Build autonomous AI agents
-- Integrate multimodal AI systems
+## Learning focus
 
----
+This project focuses on:
+
+- image loading;
+- image tensors;
+- preprocessing;
+- classification;
+- object detection foundations;
+- metrics;
+- dataset quality;
+- error analysis;
+- visual failure modes.
+
+## Minimal milestone
+
+Load a small image dataset, inspect image shapes, and run a baseline classification experiment.
+
+## Final deliverable
+
+A small vision experiment with:
+
+- image loading;
+- preprocessing;
+- a simple classification or detection baseline;
+- metrics;
+- visual inspection of errors;
+- notes on dataset quality.
 
 ## Repository structure
 
-src/ → implementation  
-docs/ → architecture  
-tests/ → experiments  
-examples/ → demos  
-docker/ → container setup  
+Recommended structure:
 
----
+```text
+data/             sample images or dataset notes
+notebooks/        exploratory vision notebooks
+notes/            image tensor and metric concepts
+src/loading/      image loading utilities
+src/models/       baseline model code
+src/evaluation/   metrics and error analysis
+experiments/      result summaries
+MENTORING.md      guided exercises and validation checklist
+learning_log.md   session-by-session observations
+```
 
-## Progress tracking
+## Success criteria
 
-See `progress.md`
+By the end of this project, I should be able to explain:
 
-Started: 2026-03-10
+- how an image is represented as a tensor;
+- what preprocessing changes;
+- what classification predicts;
+- what object detection adds;
+- which metrics are useful;
+- how to inspect visual errors instead of trusting aggregate scores only.
 
-Status: 🚧 In progress
+## Relation to the next project
+
+This project prepares `2026_project_09--multimodal_assistant`.
+
+Once images are understood as model inputs, they can be combined with text and audio in an assistant workflow.
